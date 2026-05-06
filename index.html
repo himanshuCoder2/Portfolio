@@ -1585,7 +1585,7 @@
 
     <!-- NAVBAR -->
     <nav id="navbar">
-        <a href="#hero" class="nav-logo">himanshu.</a>
+        <a href="#hero" class="nav-logo">Himanshu.</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -1687,7 +1687,7 @@
                 </div>
                 <div class="hero-photo-ring">
                     <div class="hero-photo-inner">
-                        <img src="https://avatars.githubusercontent.com/u/placeholder" alt="Himanshu Bijwar"
+                        <img src="https://avatars.githubusercontent.com/u/121844434?v=4" alt="Himanshu Bijwar"
                             onerror="this.parentElement.innerHTML='<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'120\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%236366f1\' stroke-width=\'1\' opacity=\'0.5\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'/><circle cx=\'12\' cy=\'7\' r=\'4\'/></svg>'" />
                     </div>
                 </div>
@@ -2107,27 +2107,6 @@
                     <div class="cert-issuer">Akshay Saini — NamasteDev</div>
                 </div>
             </div>
-            <div class="cert-card reveal reveal-delay-2">
-                <div class="cert-icon">⚛️</div>
-                <div>
-                    <div class="cert-name">React.js — Complete Guide</div>
-                    <div class="cert-issuer">Udemy / NamasteDev</div>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-3">
-                <div class="cert-icon">🟢</div>
-                <div>
-                    <div class="cert-name">Node.js & Express.js</div>
-                    <div class="cert-issuer">Backend Development</div>
-                </div>
-            </div>
-            <div class="cert-card reveal reveal-delay-4">
-                <div class="cert-icon">🍃</div>
-                <div>
-                    <div class="cert-name">MongoDB Developer</div>
-                    <div class="cert-issuer">Database & NoSQL</div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -2152,7 +2131,7 @@
                             <div
                                 style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text2);margin-bottom:2px;">
                                 Email</div>
-                            <div style="color:var(--text);font-weight:600;">himanshu.bijwar@gmail.com</div>
+                            <div style="color:var(--text);font-weight:600;">bijwarhimanshu2016@gmail.com</div>
                         </div>
                         <svg style="margin-left:auto;" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
@@ -2191,14 +2170,14 @@
                             <div
                                 style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text2);margin-bottom:2px;">
                                 GitHub</div>
-                            <div style="color:var(--text);font-weight:600;">github.com/himanshubijwar</div>
+                            <div style="color:var(--text);font-weight:600;">github.com/himanshuCoder2</div>
                         </div>
                         <svg style="margin-left:auto;" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="9 18 15 12 9 6" />
                         </svg>
                     </a>
-                    <a href="#" onclick="alert('Add your resume PDF link here!');return false;" class="contact-link"
+                    <a href="https://drive.google.com/file/d/1ln1nARB44K0QOf4PWT0KAaTfDhz72DnG/view?usp=sharing" onclick="alert('Add your resume PDF link here!');return false;" class="contact-link"
                         style="border-color:var(--accent);background:rgba(99,102,241,0.05);">
                         <span class="contact-link-icon">📄</span>
                         <div>
@@ -2249,9 +2228,12 @@
             <div class="footer-text" style="margin-top:6px;">Full Stack Developer — MERN · Next.js · TypeScript</div>
         </div>
         <div class="footer-text" style="text-align:center;">
-            Crafted with ❤️ using HTML · CSS · JS<br />
-            <span style="color:var(--accent2);">© 2026 Himanshu Bijwar</span>
+            <span style="color:var(--accent2);">© <span id="copy-year"></span> Himanshu Bijwar</span>
         </div>
+        
+        <script>
+            document.getElementById('copy-year').textContent = new Date().getFullYear();
+        </script>
         <div class="footer-socials">
             <a href="https://github.com/himanshuCoder2" target="_blank" rel="noopener" class="social-btn"
                 title="GitHub">
@@ -2391,11 +2373,6 @@
                 a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
             });
         }, { passive: true });
-
-        // ===== PROFILE IMAGE: try GitHub avatar =====
-        // You can replace the src with your actual photo URL
-        // e.g. src="https://your-photo-url.jpg"
-        // The onerror fallback will show a placeholder SVG icon if the URL fails
     </script>
 </body>
 
